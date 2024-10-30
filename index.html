@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="portfolio-container">
+        <ul class=" navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Service</a></li>
+        </ul>
+        <div class = "left-container">
+            <div class = "icons">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-mailchimp"></i>
+            </div>
+            <div class = "content">
+                <p class="intro ">Hi! I am <span>Shubham Gupta</span></p>
+                <h1>Software Engineer </h1>
+                <p class="detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, nesciunt! Ipsum minima, suscipit provident architecto minus velit eos at quasi. Omnis atque optio nobis illum vero, consectetur officia velit doloremque.</p>
+                <div class = "btn-container">
+                    <button>Hire Me</button>
+                    <button>View Project</button>
+                </div>
+
+            </div>
+            
+        </div>
+        <div class = "right-container"></div>
+
+
+    </div>
+</body>
+
+<script>
+    const titles = ["Software Engineer", "Data Analyst", "Data Enthusiast", "AI Researcher"];
+    document.querySelector("h1").innerText = titles[Math.floor(Math.random() * titles.length)];
+</script>
+
+</html>
